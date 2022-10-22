@@ -193,7 +193,7 @@ export default function Cards() {
                     </span>
                     <CardContent>
                       <Typography
-                        component="div"
+                         component="div"
                         color="primary"
                         className="subText"
                       >
