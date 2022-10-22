@@ -1,13 +1,234 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-color {
+  padding: 0%;
+  margin: 0%;
+  background-color: #d4d5d6;
+  height: 100%;  
+}
+.line {
+  height: 2px;
+  background-color: #424344;
+}
+.MuiGrid-root {
+  flex-basis: 18% !important;
+  flex-grow: 1 !important;
+}
+.text-color {
+  color: #1976d2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* tablet view */
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .cardsAll {
+        max-width: 268px;
+        height: 430px;
+        margin: 41px 8px 8px 10px;
+      }
+      .fixed {
+        position: fixed;
+        z-index: 99;
+        left: 0px;
+        top: 0px;
+      }
+      .card {
+        height: 100%;
+        max-width: 223px;
+        margin-top: 40px;
+      }
+      .bg-color h3 {
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        font-weight: bold;
+        z-index: 99;
+        background-color: #d4d5d6;
+        width: 100%;
+        margin-left: 0%;
+        padding: 15px, 0px;
+        padding-left: 17px;
+        padding-bottom: 10px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px 0px;
+       
+      }
+      .footer h4 {
+        position: fixed;
+        bottom: 0%;
+        margin-bottom: 0px;
+        padding: 15px 0px;
+        background-color: #d4d5d6;
+        width: 100%;
+        z-index: 999;
+      }
+      .bg-color h3 {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        font-weight: bold;
+        z-index: 99;
+        background-color: #d4d5d6;
+        width: 100%;
+        margin-left: 0%;
+        padding: 15px, 0px;
+        padding-left: 17px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .manu{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 225px;
+      }
+      .images {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .images img {
+        height: 215px;
+        background-color: #d4d5d6;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      .button {
+        padding: 5px 20px !important;
+      }
+  
+}
+
+/* mobile view */
+@media screen and (min-width: 0px) and (max-width: 700px) {
+    .button {
+        padding: 5px 25px !important;
+      }
+    .cardsAll {
+        max-width: 255px;
+        height: 430px;
+        margin: 25px 0px 0px 68px;
+      }
+      .card {
+        height: 100%;
+        max-width: 257px;
+        margin-top: 37px;
+        text-align: center;
+        margin-left: 65px;
+      }
+      
+      .bg-color h3 {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        font-weight: bold;
+        z-index: 99;
+        background-color: #d4d5d6;
+        width: 100%;
+        margin-left: 0%;
+        padding: 15px, 0px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px 0px;
+       
+      }
+      .footer h4 {
+        position: fixed;
+        bottom: 0%;
+        margin-bottom: 0px;
+        padding: 15px 0px;
+        background-color: #d4d5d6;
+        width: 100%;
+        z-index: 999;
+      }
+      .images {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .images img {
+        height: 215px;
+        background-color: #d4d5d6;
+        padding: 8px;
+        border-radius: 5px;
+      }
+     
+      
+}
+
+/* // desktop view  */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .bg-color h3 {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    font-weight: bold;
+    z-index: 99;
+    background-color: #d4d5d6;
+    width: 100%;
+    margin-left: 0%;
+    padding: 15px, 0px;
+    padding-left: 17px;
+    padding-bottom: 10px;
+  }
+  .card {
+    height: 100%;
+    max-width: 270px;
+    margin-top: 42px;
+   
+  }
+  .cardsAll {
+    max-width: 250px;
+    height: 430px;
+    margin:  43px 8px 8px 8px
+  }
+  .manu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 285px;
+  }
+  .images {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .images img {
+    height: 225px;
+    background-color: #d4d5d6;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px 0px;
+   
+  }
+  .footer h4 {
+    position: fixed;
+    bottom: 0%;
+    margin-bottom: 0px;
+    padding: 15px 0px;
+    background-color: #d4d5d6;
+    width: 100%;
+    z-index: 999;
+  }
+  .button {
+    padding: 7px 30px !important;
+  }
+  .text-1 {
+    font-size: 12px !important;
+  }
+  .subText {
+    font-size: 15px !important ;
+    font-weight: bold !important;
+  }
+  .fixed {
+    position: fixed;
+    z-index: 99;
+    left: 0px;
+    top: 0px;
+  }
+ 
 }
